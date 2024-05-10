@@ -10,7 +10,8 @@ const cors = require('cors');
 app.use(cors({
   credentials: true,
   origin: "*",
-  method: "GET,HEAD,PUT,PATCH,POST,DELETE"
+  method: "GET,HEAD,PUT,PATCH,POST,DELETE",
+  allowedHeaders: ["Content-Type"]
 }))
 
 app.use(express.json());
