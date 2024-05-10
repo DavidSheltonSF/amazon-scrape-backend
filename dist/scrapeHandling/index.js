@@ -33,6 +33,7 @@ async function amazonScrapping(key) {
     })
         .catch((err) => {
         console.log(err);
+        console.log('DEU UM ERRO NA REQUISIÇÃO pra AMAZON');
         return null;
     });
     return response;

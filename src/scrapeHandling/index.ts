@@ -36,6 +36,7 @@ export default async function amazonScrapping(key: string){
     })
     .catch((err) => {
       console.log(err);
+      console.log('DEU UM ERRO NA REQUISIÇÃO pra AMAZON')
       return null;
     });
     return response;
