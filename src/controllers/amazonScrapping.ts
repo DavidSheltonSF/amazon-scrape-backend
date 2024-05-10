@@ -12,8 +12,8 @@ export const amazonScrappingController = async (req: Request, res: Response) => 
     const response = await scrapeHandling(String(key));
 
     if (!response){
-      console.log('No response');
-      return res.sendStatus(400);
+      console.log('No response from amazon');
+      return res.sendStatus(500);
     }
 
     res.status(200).json(response);

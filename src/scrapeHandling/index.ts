@@ -9,7 +9,6 @@ export default async function amazonScrapping(key: string){
     headers: {
       'Content-Type': 'application/json',
       'User-Agent': 'axios 10.2.4',
-      Accept: 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
     }
   }
   )
