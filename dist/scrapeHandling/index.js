@@ -12,6 +12,7 @@ async function amazonScrapping(key) {
         headers: {
             'Content-Type': 'application/json',
             'User-Agent': 'axios 10.2.4',
+            'Accept': '*/*'
         }
     })
         .then((res) => {
