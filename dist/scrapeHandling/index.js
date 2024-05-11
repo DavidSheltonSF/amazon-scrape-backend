@@ -8,10 +8,11 @@ const jsdom_1 = require("jsdom");
 const handleData_1 = require("./handleData");
 async function amazonScrapping(key) {
     const items = [];
+    //'User-Agent': 'axios 10.2.4',
     const response = await axios_1.default.get(`https://www.amazon.com.br/s?k=${key}`, {
         headers: {
             'Content-Type': 'application/json',
-            'User-Agent': 'axios 10.2.4',
+            'User-Agent': 'User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0',
             'Accept': '*/*'
         }
     })
