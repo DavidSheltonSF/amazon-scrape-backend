@@ -4,6 +4,6 @@ import { cacheHanler } from "../middlewares";
 
 
 export default (router: Router) => {
-  //router.get('/scrape', cacheHanler(500), amazonScrappingController)
-  router.get('/scrape', amazonScrappingController)
+  router.get('/scrape', cacheHanler(500), amazonScrappingController)
+  //router.get('/scrape', amazonScrappingController)
 }
