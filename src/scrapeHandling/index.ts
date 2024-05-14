@@ -5,7 +5,7 @@ import { getImageURL, getTitle, getRating } from "./handleData";
 export default async function amazonScrapping(key: string){
   const items: Record<string, any>[] = [];
   //'User-Agent': 'axios 10.2.4',
-  const response = await axios.get(`https://www.amazon.com/s?k=${key}`, {
+  const response = await axios.get(`https://www.amazon.com.br/s?k=${key}`, {
     headers: {
       'Content-Type': 'application/json',
       'User-Agent': 'axios 10.2.4',
